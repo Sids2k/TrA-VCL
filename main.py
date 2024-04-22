@@ -85,15 +85,15 @@ if __name__ == '__main__':
     
     parser.add_argument('-hs', '--hidden_size', type=list, default=[100,100], help='Hidden size for the model')
     parser.add_argument('-bs', '--batch_size', type=int, default=256, help='Batch size for training')
-    parser.add_argument('-ne', '--num_epochs', type=int, default=100, help='Number of epochs for training')
+    parser.add_argument('-ne', '--num_epochs', type=int, default=500, help='Number of epochs for training')
     parser.add_argument('-nt', '--num_tasks', type=int, default=10, help='Number of tasks')
     parser.add_argument('-cs', '--coreset_size', type=int, default=200, help='Coreset size')
     parser.add_argument('-sh', '--single_head', type=bool, default=True, help='Use single head or not (overridden)')
     parser.add_argument('-cf', '--coreset_formation', type=str, choices=['random', 'kcenter'], default='random', help='Coreset formation method')
     
     parser.add_argument('-ac', '--augmented_coreset', type=bool, default=False, help='Use augmented coreset or not')
-    parser.add_argument('-as', '--augmented_coreset_size', type=int, default=100, help='Size of augmented coreset')
-    parser.add_argument('-ai', '--augmentation_iteration', type=int, default=100, help='Number of iterations for augmentation')
+    parser.add_argument('-as', '--augmented_coreset_size', type=int, default=200, help='Size of augmented coreset')
+    parser.add_argument('-ai', '--augmentation_iteration', type=int, default=500, help='Number of iterations for augmentation')
 
 
 
